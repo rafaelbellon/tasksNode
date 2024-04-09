@@ -8,8 +8,12 @@
   },
   "author": "Rafael Bellon",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "consign": "^0.1.6",
     "express": "^4.18.2",
+    "jwt-simple": "^0.5.6",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
     "sequelize": "^6.37.1",
     "sqlite3": "^5.1.7"
   },
