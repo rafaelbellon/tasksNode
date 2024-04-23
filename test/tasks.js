@@ -37,7 +37,7 @@
            .set("Authorization", token)
            .expect(200)
            .end((err, res) => {
-             //expect(res.body).to.have.length(2);             
+             expect(res.body).to.have.length(2);             
              expect(res.body[0].title).to.eql("Work");
              expect(res.body[1].title).to.eql("Study");
              done(err);
