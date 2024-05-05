@@ -4,10 +4,14 @@
   "description": "API de gestão de tarefas",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
-    "test": "cross-env NODE_ENV=test mocha test/**/*.js --timeout 10000"
+    "start": "npm run apidoc && babel-node index.js",
+    "test": "cross-env NODE_ENV=test mocha test/**/*.js --timeout 10000",
+    "apidoc": "apidoc -i routes/ -o public/apidoc"
   },
   "author": "Rafael Bellon",
+  "apidoc": {
+    "name": "Documentação - Node Task API"
+  },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "bcrypt": "^5.1.1",
@@ -21,6 +25,7 @@
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
+    "apidoc": "^1.2.0",
     "babel-cli": "^6.26.0",
     "chai": "^4.2.0",
     "mocha": "^10.4.0",
