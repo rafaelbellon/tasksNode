@@ -77,7 +77,7 @@ module.exports = app => {
          *      "id": 1,
          *      "name": "John Connor",
          *      "email": "john@connor.net",
-         *      "passwrod": "$2a$10$SK1B1",
+         *      "password": "$2a$10$SK1B1",
          *      "update_at": "2024-05-06T19:26:00.778Z",
          *      "created_at": "2024-05-06T19:26:00.778Z"   
          *    }
